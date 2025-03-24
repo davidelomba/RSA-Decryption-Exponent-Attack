@@ -18,14 +18,8 @@ The attack exploits the relationship between RSA's public (`e`) and private (`d`
 
 1. Given `ed ≡ 1 mod φ(n)`
 2. Factor `ed - 1` as `2ʳ × m`
-3. Find non-trivial square roots of unity modulo `n` using:
-   ```math
-   x^(2ʲ × m) ≡ 1 mod n  for some j < r
-   ```
-4. Recover factors via GCD:
-   ```math
-   p = gcd(x^(2ʲ⁻¹ × m) ± 1, n)
-   ```
+3. Find non-trivial square roots of unity modulo `n`
+4. Recover factors via GCD
 
 ## Implementation Details
 
