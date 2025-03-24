@@ -68,16 +68,6 @@ def decryptionexp(n, ed):
 python attacco_rsa.py
 ```
 
-### Expected Output
-```plaintext
-[RESULTS]
-Average time: 0.0523 ± 0.0017 sec
-Iterations: 14.72 ± 3.21
-Factors found:
-p = 12345678901234567890...
-q = 98765432109876543210...
-```
-
 ### Advanced Options
 Modify `test_decryptionexp()` in the code to:
 - Change RSA bit-length (default: 1024)
